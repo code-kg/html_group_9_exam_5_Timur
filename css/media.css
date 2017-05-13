@@ -1,3 +1,46 @@
-@media screen and(max-width: 1170px){
-
+@media screen and (max-width: 1117px){
+    .services-title-content {
+        float: none;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    .services-title .btn {
+        float: none;
+        text-align: center;
+    }
+    .services{
+        justify-content: center;
+    }
+    .service {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .reason-content {
+        justify-content: center;
+    }
+     .reason-item {
+         width: 300px;
+         margin: 10px 10px;
+     }
+     .footer{
+         justify-content: center;
+     }
+     .footer-item {
+         margin: 10px;
+         width: 300px;
+     }
+     .contacts {
+         width: 300px !important;
+     }
+}
+@media screen and (max-width: 998px){
+    .logo {
+        float: none;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .menu {
+        float: none;
+        text-align: center;
+    }
 }
