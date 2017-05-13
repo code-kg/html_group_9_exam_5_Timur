@@ -29,6 +29,7 @@ ul.list{
 }
 .sublist {
     display: none;
+    border-radius: 5px;
 }
 .dropdown {
     position: relative;
@@ -37,6 +38,16 @@ ul.list{
     margin: 0;
     padding: 0;
 }
+.triangle {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 6px 6px 6px;
+    border-color: transparent transparent #e2534b transparent;
+    position: absolute;
+    top: -6px;
+    left: 12px;
+}
 .dropdown-arrow{
     content: '';
     display: block;
@@ -44,7 +55,7 @@ ul.list{
     height: 5px;
     width: 8px;
     background: url("../img/portfolio-arrow.png") 0 0 no-repeat;
-    margin: 10px 5px;
+    margin: 7px 5px;
 }
 li.menu-item{
     display: inline-block;
@@ -228,7 +239,7 @@ li.menu-item{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 0 0 67px 0;
+    margin: 0 0 46px 0;
 }
 .service{
     width: 270px;
@@ -240,7 +251,7 @@ li.menu-item{
 }
 .service a {
     text-decoration: none;
-    margin: 48px 0 30px 0;
+    margin: 48px 0 20px 0;
     display: inline-block;
     line-height: 1.8;
 }
@@ -265,9 +276,10 @@ li.menu-item{
 }
 .service p {
     font-size: 13px;
-    padding: 0 0 60px 0;
+    padding: 0 0 89px 0;
     margin: 0 0 0 0;
     color: #7f8c8c;
+    line-height: 1.5;
 }
 .service-btn {
     position: absolute;
@@ -279,7 +291,7 @@ li.menu-item{
 .service-btn button{
     border: none;
     background-color: #76c7c0;
-    padding: 16px 70px;
+    padding: 20px 70px;
     border-radius: 4px;
     color: #FFFFFF;
 }
@@ -289,7 +301,7 @@ li.menu-item{
 
 .reason{
     background: #ececec url(../img/line-2.png) 70px 0 no-repeat;
-    padding: 60px 0 30px 0;
+    padding: 60px 0 45px 0;
 }
 .reason-title{
     text-align: center;
@@ -346,12 +358,28 @@ li.menu-item{
 .feedback {
     width: 277px;
 }
+.feedback span.say{
+    display: block;
+    margin-left: 55px;
+    font-weight: bold;
+    color: #777777;
+}
 .clients-say {
     background-color: #f8f8f8;
     border-radius: 4px;
     padding: 15px 16px;
+    position: relative;
 }
-
+.clients-say span.trian{
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 24px 24px 0;
+    border-color: transparent #f8f8f8 transparent transparent;
+    bottom: -24px;
+    left: 20px;
+}
 footer {
     background: #76c7c0 url("../img/line-3.png") 0 0 no-repeat;
 }
