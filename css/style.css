@@ -1,12 +1,116 @@
 body {
-    font-family: 'arial', sans-serif;
+    font-family:'Open Sans','arial', sans-serif;
     color: #000;
     background: #ffffff;
-    font-size: 13px;
+    font-size: 14px;
     line-height: 1.3;
 }
 .container {
     min-width: 320px;
-    max-width: 1170px;
+    max-width: 1174px;
     margin: 0 auto;
+}
+header {
+    height: 80px;
+    background: #76c7c0 url("../img/line.png") 0 71px no-repeat;
+}
+.header {
+    padding: 25px 0 22px 0;
+}
+.logo{
+    float: left;
+}
+.menu{
+    float: right;
+}
+ul.list{
+    margin: 0;
+    padding: 0;
+}
+.sublist {
+    display: none;
+}
+.dropdown {
+    position: relative;
+}
+.dropdown-arrow{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 8px;
+    background: url("../img/portfolio-arrow.png") 0 0 no-repeat;
+    top: 0;
+    left: 0;
+}
+li.menu-item{
+    display: inline-block;
+    padding: 0 0 0 0;
+    list-style-type: none;
+    margin: 0 10px;
+}
+.menu-item a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 20px;
+}
+.slide {
+    display: inline-block;
+}
+.slide img {
+    width: 100%;
+}
+.slick-arrow{
+    position: absolute;
+    /*height: 100%;*/
+    width: 10%;
+    border: none;
+    top: 50%;
+    z-index: 100;
+    font-size: 0;
+    background: transparent;
+}
+.slick-arrow:before{
+    content: '';
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -25px 0 0 -25px;
+    background: rgba(204,204,204,0.7) url("../img/arrows.png") 5px 5px no-repeat;
+}
+.slick-arrow:hover:before{
+    background-color: rgba(204,204,204,1);
+}
+.slick-prev{
+    left: 0;
+}
+.slick-next{
+    right: 0;
+}
+.slick-next.slick-arrow:before{
+    background-position: -35px 5px;
+}
+.slick-dots {
+    position: absolute;
+    width: 100%;
+    bottom: 30px;
+    left: 0;
+    text-align: center;
+}
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+.slick-dots button{
+    background: #FFFFFF;
+    border: 2px solid #cccccc;
+    border-radius: 50%;
+    font-size: 0;
+    width: 15px;
+    height: 15px;
+    line-height: 0;
+    padding: 0;
+    margin: 0;
 }
